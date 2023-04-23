@@ -14,7 +14,7 @@ app = Flask(
 )
 api = Api(app)
 api.add_resource(Front, '/')
-api.add_resource(OpenAiCompilation, '/complication')
+api.add_resource(OpenAiCompilation, '/api/complication')
 app.before_request(RequestInterceptor.before_request)
 app.after_request(RequestInterceptor.after_request)
 
