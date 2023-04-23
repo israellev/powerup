@@ -3,3 +3,4 @@ env/
 .env
 client/node_modules
 client/.idea
+client/build
