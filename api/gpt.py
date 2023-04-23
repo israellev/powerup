@@ -16,10 +16,10 @@ class OpenAiCompilation(Resource):
         prompt = f"Please a create nice creative and unique 'About Me' description for a professional social network within the organization, a description based on the information the user has entered attached here."
         styles = [
             "Please create it in a professional style.",
-            "Please create it in a free and inviting style with emoji.",
+            "Please create it in a free and inviting style with 1 or 2 emoji.",
             "Please create it with humor.",
         ]
-        all_details = f"User details:\ncountry: {country}\nrole: {role}\nexpertise: {expertise}\nhobbies: {hobbies}\nadditional info: {additional}\n."
+        all_details = f"User details: \nname: ${name}\ncountry: {country}\nrole: {role}\nexpertise: {expertise}\nhobbies: {hobbies}\nadditional info: {additional}\n."
         print('prompt: ', prompt, all_details)
         response = []
         for style in styles:

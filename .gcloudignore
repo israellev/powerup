@@ -1,0 +1,14 @@
+.gcloudignore
+.git/
+.gitignore
+.idea/
+!client/build/
+!.env
+
+# Python pycache:
+__pycache__/
+# Ignored by the build system
+/setup.cfg
+
+client/src/
+client/node_modules/

@@ -4,6 +4,8 @@ from interceptors.request_interceptor import RequestInterceptor
 from pathlib import Path
 from api.base import Front
 from api.gpt import OpenAiCompilation
+from dotenv import load_dotenv
+load_dotenv()
 front_folder = f'{Path().parent.resolve()}/client/build'
 print(front_folder)
 app = Flask(
